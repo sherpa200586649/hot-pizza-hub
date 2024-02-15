@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pizza hub</title>
+    <link rel="stylesheet" href="index.css"><!---index.css for styling-->
+
+</head>
+
+<body>
+    <main class="login"><!----classes for smoother styling for different part -->
+        <form action="backend.php">
+             <!---for better form's divs differntiation-->
+                <div class="type">
+                    <fieldset>
+                        <legend><strong>selecy the pizza type</strong></legend><!----pizza type according to the style and origination-->
+                        <label for="Neapolitan">Neapolitan Pizza</label>
+                        <input type="radio" name="Neapolitan Pizza" id="Neapolitan">
+                        <label for="new york">New York Style Pizza</label>
+                        <input type="radio" name="New York Style Pizza" id="new york">
+                        <label for="California">California style pizza</label>
+                        <input type="radio" name="California style pizza" id="California">
+                    </fieldset>
+                </div>
+
+                <br>
+                <div class="topping"><!---topping selection for pizza-->
+
+                    <fieldset>
+                        <legend required><strong>select toppings</strong></legend>
+                        <label for="pepporoni">pepporoni</label>
+                        <input type="checkbox" name="topping[]" id="pepporoni" value="pepporoni"> <br>
+                        <label for="chicken">chicken</label>
+                        <input type="checkbox" name="topping[]" id="chicken" value="chicken"><br>
+                        <label for="cheese">cheeese</label>
+                        <input type="checkbox" name="topping[]" id="cheese" value="cheese">
+                    </fieldset>
+                </div>
+                <br>
+                <div class="size"><!---pizza size-->
+                    <fieldset>
+                        <label for="size" ><strong>Select the size</strong></label><br>
+                        <select name="pizza size" id="size">
+                            <option value="large">large</option>
+                            <option value="medium">medium</option>
+                            <option value="small">small</option>
+                        </select>
+                    </fieldset>
+                </div>
+                <br>
+                <div>
+                <fieldset>
+                <label for="slice"><strong>how many slice you want in one pizza</strong></label>
+                <input type="number"name="slice"id="slice" min="1" value="1">
+            </fieldset>
+            </div>
+                
+                <div class="quantity">
+                    <fieldset>
+                        <label for="quantity"><strong>numbers of pizza</strong></label>
+                        <input type="number" name="quantity" id="quantity" min="1" value="1">
+                    </fieldset>
+
+                    <br>
+                </div>
+                <div class="Textarea" >
+                    <fieldset>
+                        <legend><strong>any other food item you want to order</strong></legend>
+                        <textarea name="detail" id="" cols="60" rows="4"></textarea>
+                    </fieldset>
+                </div>
+                <div class="submit">
+                    <button type="submit">confirm order</button>
+                </div>
+                <div class="reset">
+                    <button type="reset">reset</button>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </form>
+    </main>
+</body>
+<footer>
+
+
+
+
+</footer>
+
+</html>
